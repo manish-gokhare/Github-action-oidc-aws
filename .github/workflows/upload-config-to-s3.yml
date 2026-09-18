@@ -48,7 +48,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v6
         with:
-          rolr-to-assume: arn:aws:iam::195231312458:role/Github-action-oidc-aws
+          role-to-assume: arn:aws:iam::195231312458:role/Github-action-oidc-aws
           aws-region: ${{ env.AWS_REGION }}
           role-session-name: GitHubActions-S3ConfigUpload
 
