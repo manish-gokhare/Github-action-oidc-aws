@@ -42,6 +42,9 @@ jobs:
           echo "Config content:"
           cat ${{ env.CONFIG_FILE }}
 
+      - name: OIDC Debugger
+        uses: github/actions-oidc-debugger@main
+
       # --------------------------------------------------
       # 3. Authenticate to AWS using GitHub OIDC
       # --------------------------------------------------
